@@ -1,0 +1,12 @@
+t = int(input())
+for i in range(t):
+    nk = input()
+    nk = list(nk.split(" "))
+    nk = list(filter(None, nk))
+    nk = list(map(int, nk))
+    arr = input()
+    arr = list(arr.split(" "))
+    arr = list(filter(None, arr))
+    arr = list(map(int, arr))
+    arr.sort()
+    print(' '.join([str(elem) for elem in arr]))
